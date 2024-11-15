@@ -23,9 +23,10 @@ body::before {
 /*Ik heb dit met hulp van chatgpt gedaan*/
 
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 #Div {
@@ -43,7 +44,7 @@ html, body {
 #log-in-section {
     max-width: 400px;
     height: 741px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
