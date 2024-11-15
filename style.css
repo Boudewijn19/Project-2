@@ -20,6 +20,7 @@ body::before {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
+
 /*Ik heb dit met hulp van chatgpt gedaan*/
 
 html, body {
@@ -54,6 +55,7 @@ html, body {
     font-family: sans-serif;
     flex: 1;
 }
+
 /*Dit stukje heb ik met Chatgpt deels gedaan*/
 
 input {
@@ -117,15 +119,6 @@ input[type="checkbox"] {
     font-family: sans-serif;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    /*padding: 50px;*/
-    text-align: center;
-    height: 310px;
-    margin: 0;
-}
-
 #Tekst1 {
     text-align: left;
     display: block;
@@ -143,3 +136,69 @@ footer {
     margin-top: 11px;
     padding: 22px;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 60px;
+    text-align: left;
+    height: 310px;
+    margin-top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-areas:
+        "questions help-center terms privacy"
+        "faq corporate advert cookie";
+}
+
+.footer-list .questions {
+    grid-area: questions;
+}
+
+.footer-list .faq {
+    grid-area: faq;
+}
+
+.footer-list .help-center {
+    grid-area: help-center;
+}
+
+.footer-list .terms {
+    grid-area: terms;
+}
+
+.footer-list .privacy {
+    grid-area: privacy;
+}
+
+.footer-list .cookie {
+    grid-area: cookie;
+}
+
+.footer-list .corporate {
+    grid-area: corporate;
+}
+
+.footer-list .advert {
+    grid-area: advert;
+}
+
+.footer-list li {
+    font-family: sans-serif;
+    color: white;
+}
+
+/*Ik heb de .footer-list met chatgpt gedaan*/
